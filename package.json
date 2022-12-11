@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@actions/core": "^1.10.0",
+    "axios": "^1.2.1",
     "markdown-list": "^0.1.0"
   },
   "name": "list-of-files-by-extension-github-action",

@@ -4,8 +4,16 @@ description: 'Updates README with list of files by extension'
 icon: 'list'
 color: 'blue'
 inputs:
-  directory:
-    description: 'Directory to be listed'
+  username:
+    description: 'Owner of the repository'
+    required: false
+    default: 'alisuleymantopuz'
+  repository:
+    description: 'Github repository'
+    required: false
+    default: 'mindMaps'
+  path:
+    description: 'Path in repository'
     required: false
     default: ''
   extension:

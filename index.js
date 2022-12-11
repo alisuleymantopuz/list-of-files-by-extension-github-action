@@ -1,59 +1,42 @@
-const { readdir } = require('fs/promises');
 const fs = require("fs/promises");
 const path = require('path');
 const markdownList = require('markdown-list');
 const core = require("@actions/core");
+const axios = require('axios');
 
 const extension = core.getInput('extension') || 'png';
+const username = core.getInput('username') || 'alisuleymantopuz';
+const repository = core.getInput('repository') || 'mindMaps';
+const contentPath = core.getInput('path') || '';
+const readme_path = core.getInput('readme_path') || './README.MD';
 
-const directory = core.getInput('directory') || '';
-
-const readme_path = core.getInput('readme_path') || './README.md';
-
-const directoryPath = path.join(__dirname, directory);
-
-
-const findByExtension = async (dir, ext) => {
-
-  const matchedFiles = [];
-
-  const files = await readdir(dir);
-
-  for (const file of files) {
-
-    const fileExt = path.extname(file);
-
-    if (fileExt === `.${ext}`) {
-      matchedFiles.push(file);
-    }
-  }
-
-  return matchedFiles;
-};
-
-const getMarkdownUrls = async (files) => {
-
-  const markdownUrls = [];
-
-  for (const file of files) {
-    var url = `[${file}](${file.replace(/\ /g, "%20")})`;
-    markdownUrls.push(url);
-  }
-
-  return markdownUrls;
-};
 
 (async () => {
   try {
 
     // get list of files
-    const files = await findByExtension(directoryPath, extension);
+    const contentFilesArray = [];
 
-    // get markdown urls
-    const urls = await getMarkdownUrls(files);
+    const url = `https://api.github.com/repos/${username}/${repository}/contents/${contentPath}`;
+
+    await axios.get(url)
+      .then(response => {
+        let resData = response.data;
+        if (resData.length > 0) {
+          resData.map((data) => {
+            if (data && data.type === 'file') {
+              var ext = path.extname(data.html_url);
+              if (ext === `.${extension}`) {
+                const listItem = `[${data.name}](${data.html_url})`;
+                contentFilesArray.push(listItem);
+              }
+            }
+          })
+        }
+      });
 
     // convert to markdown list
-    const list = markdownList(urls);
+    const list = markdownList(contentFilesArray);
 
     // prepare new list of files section
     let listOfFiles = `<!-- start list-of-files -->\n${list}\n<!-- end list-of-files -->`;
