@@ -18,8 +18,6 @@ jobs:
       run: npm install
     - name: Run List of files action
       uses: ./ # Uses an action in the root directory
-      with:
-         extension: 'png' # default
     - name: Commit and push update
       run: |-
         git config --global user.email "list-of-files@github.action"
