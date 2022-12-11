@@ -1,0 +1,31 @@
+name: Update README with List of files in directory
+on:
+  workflow_dispatch: # triggers manually
+  schedule:
+  - cron: "0 0 * * *" # triggers every midnight
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Use Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - name: Install node dependencies
+      run: npm install
+    - name: Run List of files action
+      uses: ./ # Uses an action in the root directory
+      with:
+         extension: 'png' # default
+         directory : '' # default
+         readme_path: './README.md' # default
+    - name: Commit and push update
+      run: |-
+        git config --global user.email "list-of-files@github.action"
+        git config --global user.name "List of files Bot"
+        git add -A
+        git commit -m "Added List of files by extension from GitHub Actions"
+        git push
