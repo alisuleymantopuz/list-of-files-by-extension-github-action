@@ -15,5 +15,5 @@ inputs:
     default: "./README.md"
     required: false
 runs:
-  using: 'node12' #currently only supports docker or node12
+  using: 'node14'
   main: 'index.js'
