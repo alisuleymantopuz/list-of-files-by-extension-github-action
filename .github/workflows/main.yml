@@ -21,7 +21,7 @@ jobs:
       with:
          extension: 'png' # default
          directory : '' # default
-         readme_path: 'README.md' # default
+         readme_path: './README.md' # default
     - name: Commit and push update
       run: |-
         git config --global user.email "list-of-files@github.action"
