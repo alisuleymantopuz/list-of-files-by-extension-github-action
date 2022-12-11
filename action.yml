@@ -1,6 +1,8 @@
 name: 'List of files by extension'
 author: 'Ali Suleyman TOPUZ'
 description: 'Updates README with list of files by extension'
+icon: 'list'
+color: 'blue'
 inputs:
   directory:
     description: 'Directory to be listed'
