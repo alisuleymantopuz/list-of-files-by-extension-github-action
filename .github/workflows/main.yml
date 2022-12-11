@@ -20,8 +20,8 @@ jobs:
       uses: ./ # Uses an action in the root directory
       with:
          extension: 'png' # default
-         directory : '' # default
-         readme_path: './README.md' # default
+         directory : '../../'
+         readme_path: '../../README.md'
     - name: Commit and push update
       run: |-
         git config --global user.email "list-of-files@github.action"
