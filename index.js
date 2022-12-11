@@ -8,7 +8,7 @@ const extension = core.getInput('extension') || 'png';
 
 const directory = core.getInput('directory') || '';
 
-const readme_path = core.getInput('readme_path') || 'README.md';
+const readme_path = core.getInput('readme_path') || './README.md';
 
 const directoryPath = path.join(__dirname, directory);
 
