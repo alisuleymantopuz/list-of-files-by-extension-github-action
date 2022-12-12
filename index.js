@@ -39,7 +39,7 @@ const readme_path = core.getInput('readme_path') || './README.MD';
     const list = markdownList(contentFilesArray);
 
     // prepare new list of files section
-    let listOfFiles = `<!-- start list-of-files -->\n${list}\n${new Date().toUTCString()\n}<!-- end list-of-files -->`;
+    let listOfFiles = `<!-- start list-of-files -->\n${list}\n${new Date().toUTCString()}\n<!-- end list-of-files -->`;
 
     // current listOfFile section format
     const listOfFilesSection = /<!-- start list-of-files -->[\s\S]*<!-- end list-of-files -->/g;
