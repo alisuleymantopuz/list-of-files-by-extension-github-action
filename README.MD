@@ -31,6 +31,7 @@
 Example as follows:
 
 <!-- start list-of-files -->
+- [Accelerate DevOps with Github@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Accelerate%20DevOps%20with%20Github@2x.png)
 - [Angular 12@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Angular%2012@2x.png)
 - [Architectural Charachteristics@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Architectural%20Charachteristics@2x.png)
 - [Crash cours with Axios@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Crash%20cours%20with%20Axios@2x.png)
