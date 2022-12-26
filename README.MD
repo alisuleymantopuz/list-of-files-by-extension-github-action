@@ -40,6 +40,7 @@ Example as follows:
 - [Ecma Script Versions Diff@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Ecma%20Script%20Versions%20Diff@2x.png)
 - [Javascript Nuggets@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Javascript%20Nuggets@2x.png)
 - [MERN Stack with Mongo REALM@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/MERN%20Stack%20with%20Mongo%20REALM@2x.png)
+- [Minimal APIs in ASP.NET Core@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Minimal%20APIs%20in%20ASP.NET%20Core@2x.png)
 - [Node.js - Full @2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Node.js%20-%20Full%20@2x.png)
 - [Node.js _ Express Course E2E Application Flow@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/Node.js%20_%20Express%20Course%20E2E%20Application%20Flow@2x.png)
 - [REST API with Node js _ Express@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/REST%20API%20with%20Node%20js%20_%20Express@2x.png)
@@ -52,5 +53,5 @@ Example as follows:
 - [TypeScript Crash Course@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/TypeScript%20Crash%20Course@2x.png)
 - [TypeScript for React@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/TypeScript%20for%20React@2x.png)
 
-Sun, 25 Dec 2022 00:43:53 GMT
+Mon, 26 Dec 2022 00:42:16 GMT
 <!-- end list-of-files -->
