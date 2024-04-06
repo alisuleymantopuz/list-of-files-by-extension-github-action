@@ -54,5 +54,5 @@ Example as follows:
 - [TypeScript Crash Course@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/TypeScript%20Crash%20Course@2x.png)
 - [TypeScript for React@2x.png](https://github.com/alisuleymantopuz/mindMaps/blob/main/TypeScript%20for%20React@2x.png)
 
-Fri, 05 Apr 2024 00:38:26 GMT
+Sat, 06 Apr 2024 00:37:10 GMT
 <!-- end list-of-files -->
